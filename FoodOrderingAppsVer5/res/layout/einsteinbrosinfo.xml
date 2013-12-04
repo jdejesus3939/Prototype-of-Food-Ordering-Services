@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0E68C" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/einsteinbros_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:textColor="#000000"
+            android:textSize="25dip"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:src="@drawable/einsteinbros" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dip"
+            android:text="Einstein Bros®, known for their bagels, cream cheese schmears and coffee heritage, will introduce an exceptional morning alternative that’s fast, hot and packed with flavor. But it doesn’t stop there. Einstein Bros. bistro salads, soups and sandwiches will be a great lunch attraction, while oversized brownies, krispie treats, cookies, pound cake and muffins will make for delicious anytime snacking."
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <!-- Continue Button -->
+
+        <Button
+            android:id="@+id/btnEinsteinNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="40dip"
+            android:layout_marginTop="40dip"
+            android:text="Click here to place an order..."
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0E68C" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="1,2,3" >
+
+        <TextView
+            android:id="@+id/subwayOrderHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+        
+        <Button
+            android:id="@+id/btnSubwayClearHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip"
+            android:text="Clear order history"
+            android:textColor="#000000" />
+
+        <!-- Select Sandwich -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select sandwich"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/check6inch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 inch"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvPrice6inch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/check12inch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 inch"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvPrice12inch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <!-- Select Bread -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select bread"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/radioBread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radio9GrainWheat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9-Grain Wheat"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radio9GrainHoneyOat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9-Grain Honey Oat"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioItalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Italian"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioHerbCheese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Italian Herb &amp; Cheese"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioFlatbread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flatbread"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <!-- Select Flavor -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select flavor"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/radioFlavor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioBLT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BLT"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioBlackForestHam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black Forest Ham"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioColdCutCombo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cold Cut Combo"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioItalianBMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Itatian BMT"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioSpicyItalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spicy Italian"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioSubwayMelt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subway Melt"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioTuna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuna"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioTurkeyBreast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turkey Breast"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioVeggieDelite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veggie Delite"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <!-- Select Cheese -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select cheese"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/radioCheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioAmerican"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="American"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioPepperJack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pepperjack"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioProvolone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Provolone"
+                android:textColor="#000000" />
+            
+            <RadioButton
+                android:id="@+id/radioParmesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parmesan"
+                android:textColor="#000000" />
+            
+            <RadioButton
+                android:id="@+id/radioSwiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swiss"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <!-- Select Toppings -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select toppings"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/checkLettuce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shredded Lettuce"
+            android:checked="true"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/checkTomatoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomatoes"
+            android:textColor="#000000" />
+        
+        <CheckBox
+            android:id="@+id/checkCucumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cucumbers"
+            android:textColor="#000000" />
+        
+        <CheckBox
+            android:id="@+id/checkPickles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickles"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/checkBellPeppers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bell Peppers"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/checkBlackOlives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black Olives"
+            android:textColor="#000000" />
+        
+        <CheckBox
+            android:id="@+id/checkRedOnions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red Onions"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/checkJalapenoPeppers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jalapeno Peppers"
+            android:textColor="#000000" />
+        
+        <CheckBox
+            android:id="@+id/checkBananaPeppers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banana Peppers"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/checkSpinach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spinach"
+            android:textColor="#000000" />
+        
+        <CheckBox
+            android:id="@+id/checkSalt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salt"
+            android:textColor="#000000" />
+        
+        <CheckBox
+            android:id="@+id/checkPepper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pepper"
+            android:textColor="#000000" />
+
+        <!-- Select Sauce -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select sauce"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/radioSauce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioRanch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ranch"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioMayonnaise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mayonnaise"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioChipotleSouthWest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chipotle Southwest"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioHoneyMustard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Honey Mustard"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioSweetOnion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sweet Onion"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioRedWineVinegar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red Wine Vinegar"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <!-- Select Meal -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select meal"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkDrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drink"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvPriceDrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkChips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chips"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvPriceChips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkCookies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cookies"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvPriceCookies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        
+        <!-- Continue Button -->
+
+        <Button
+            android:id="@+id/btnSubwayProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="40dip"
+            android:layout_marginTop="40dip"
+            android:text="Click here to place an order..."
+            android:textColor="#000000" />
+    </TableLayout>
+
+</ScrollView>

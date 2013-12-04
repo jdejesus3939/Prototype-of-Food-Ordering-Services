@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0E68C" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="1,2,3" >
+
+        <TextView
+            android:id="@+id/simplytogoOrderHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+        
+        <Button
+            android:id="@+id/btnSimplyToGoClearHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip"
+            android:text="Clear order history"
+            android:textColor="#000000" />
+
+        <!-- Select Sandwiches -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select sandwiches"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkSandwichA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Egg sandwich"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceSandwichA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkSandwichB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuna sandwich"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceSandwichB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkSandwichC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ham sandwich"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceSandwichC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <!-- Select Snacks -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select snacks"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkSnackA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Energy bar snack"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceSnackA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkSnackB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Packed chips"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceSnackB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkSnackC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Packed peanuts"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceSnackC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- Select Drinks -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select drinks"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkDrinkA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bottled water"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceDrinkA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkDrinkB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bottled fruit juice"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceDrinkB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkDrinkC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coffee"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceDrinkC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- Continue Button -->
+
+        <Button
+            android:id="@+id/btnSimplyToGoProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="40dip"
+            android:layout_marginTop="40dip"
+            android:text="Click here to place an order..."
+            android:textColor="#000000" />
+    </TableLayout>
+
+</ScrollView>

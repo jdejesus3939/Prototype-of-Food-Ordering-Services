@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0E68C" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="1,2,3" >
+
+        <TextView
+            android:id="@+id/starbucksOrderHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnStarbucksClearHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip"
+            android:text="Clear order history"
+            android:textColor="#000000" />
+        
+        <!-- Select Brewed Coffee -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select brewed coffee"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkBrewedCoffeeA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Decaffein"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceBrewedCoffeeA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkBrewedCoffeeB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark roast"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceBrewedCoffeeB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkBrewedCoffeeC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iced coffee"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceBrewedCoffeeC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- Select Chocolate Beverages -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select chocolate beverages"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkChocolateA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Hot chocolate"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceChocolateA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkChocolateB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peppermint hot chocolate"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceChocolateB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkChocolateC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="White hot chocolate"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceChocolateC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- Select Espresso -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Espresso"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkEspressoA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Caffe latte"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spinnerLattes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:entries="@array/subway_shots"
+                android:prompt="@string/select_shots" />
+
+            <TextView
+                android:id="@+id/priceEspressoA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkEspressoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iced caramel macchiato"
+                android:textColor="#000000" />
+
+             <Spinner
+                android:id="@+id/spinnerMacchiatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:entries="@array/subway_shots"
+                android:prompt="@string/select_shots" />
+
+            <TextView
+                android:id="@+id/priceEspressoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkEspressoC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="White chocolate mocha"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spinnerCappuccinos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:entries="@array/subway_shots"
+                android:prompt="@string/select_shots" />
+
+            <TextView
+                android:id="@+id/priceEspressoC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- Select Frappuccino -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select frappuccino"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkFrappuccinoA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Vanilla frappuccino"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceFrappuccinoA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkFrappuccinoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caramel frappuccino"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceFrappuccinoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkFrappuccinoC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cinnamon frappuccino"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceFrappuccinoC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- Continue Button -->
+
+        <Button
+            android:id="@+id/btnStarbucksProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="40dip"
+            android:layout_marginTop="40dip"
+            android:text="Click here to place an order..."
+            android:textColor="#000000" />
+    </TableLayout>
+
+</ScrollView>

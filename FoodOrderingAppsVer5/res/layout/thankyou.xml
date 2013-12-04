@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0E68C" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:text="THANK YOU"
+            android:textColor="#000000"
+            android:textSize="40dip" />
+
+        <TextView
+            android:id="@+id/tvWelcomeUser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/tvTYTotal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <Button
+            android:id="@+id/btnTYHallway"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dip"
+            android:background="@null"
+            android:text="back to hallway"
+            android:textColor="#21dbd4"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+        
+        <Button
+            android:id="@+id/btnTYLogout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dip"
+            android:background="@null"
+            android:text="Logout"
+            android:textColor="#21dbd4"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="food_products">
+        <item>1. The University Center</item>
+        <item>2. Mary and Jeff Bell Library</item>
+        <item>3. Island Hall</item>
+        <item>4. Center for Instruction Learning</item>
+        <item>5. Bay Hall</item>
+        <item>6. Faculty Hall</item>
+    </string-array>
+    
+    <string-array name="subway_shots">
+        <item>Single</item>
+        <item>Double</item>
+        <item>Triple</item>
+        <item>Quad</item>
+    </string-array>
+
+</resources>

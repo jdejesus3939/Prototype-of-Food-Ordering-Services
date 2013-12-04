@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0E68C" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="1,2,3" >
+
+        <TextView
+            android:id="@+id/einsteinOrderHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+        
+        <Button
+            android:id="@+id/btnEinsteinBrosClearHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip"
+            android:text="Clear order history"
+            android:textColor="#000000" />
+
+        <!-- Select Bagels -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select bagels"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkBagelA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plain bagel"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceBagelA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkBagelB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whole wheat bagel"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceBagelB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkBagelC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Honey nut bagel"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceBagelC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <!-- Select Sandwiches -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select sandwiches"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkSandwichA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Egg sandwich"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceSandwichA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkSandwichB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuna sandwich"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceSandwichB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkSandwichC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ham sandwich"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceSandwichC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- Select Brownies -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select brownies"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkBrownieA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baked brownie"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceBrownieA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkBrownieB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chewy brownie"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceBrownieB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkBrownieC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chocolate mint brownie"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceBrownieC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- Select Muffins -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select muffins"
+            android:textColor="#000000" />
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkMuffinA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blueberry muffin"
+                android:checked="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceMuffinA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkMuffinB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple spice muffin"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceMuffinB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkMuffinC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raspberry muffin"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/priceMuffinC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- Continue Button -->
+
+        <Button
+            android:id="@+id/btnEinsteinBrosProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="40dip"
+            android:layout_marginTop="40dip"
+            android:text="Click here to place an order..."
+            android:textColor="#000000" />
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jproject.foodorderingapps"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8"
+        android:maxSdkVersion="8" />
+
+    <!-- Allow to connect with internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- This options support any screen size -->
+    <supports-screens
+        android:anyDensity="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        android:largeScreens="true" />
+
+    <!--
+     This is the root activity:
+     1. android:clearTaskOnLaunch="true"
+     -> this option allows the application to clear the previous or
+     any saved state activity; and run this activity instead
+     2. for debugging: android:debugable="true"
+     -> if it is under development, set it to "true"
+     -> if it is published, set it to "false"
+    -->
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".DashboardActivity"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- check this out:
+        http://www.slideshare.net/RanNachmany/manipulating-android-tasks-and-back-stack
+        launchMode is set to "singleInstance" -->
+        <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login Account" >
+        </activity>
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register New Account" >
+        </activity>
+
+        <!-- Hallway Activity -->
+        <activity
+            android:name=".HallwayActivity"
+            android:label="Hallway Selection" >
+        </activity>
+        <activity
+            android:name=".UnivCenterInfoActivity"
+            android:label="University Center" >
+        </activity>
+        <activity
+            android:name=".SubwayInfoActivity"
+            android:label="Subway" >
+        </activity>
+        <activity
+            android:name=".EinsteinBrosInfoActivity"
+            android:label="Einstein Bros" >
+        </activity>
+        <activity
+            android:name=".UltimateBajaInfoActivity"
+            android:label="Ultimate Baja" >
+        </activity>
+        <activity
+            android:name=".SimplyToGoInfoActivity"
+            android:label="Simply To-Go" >
+        </activity>
+        <activity
+            android:name=".StarbucksInfoActivity"
+            android:label="Starbuck" >
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".SubwayMainActivity"
+            android:label="Subway" >
+        </activity>
+        <!-- &#x00AE; is a hexadecimal reference for registered sign -->
+        <activity
+            android:name=".EinsteinBrosMainActivity"
+            android:label="Einstein Bros ®" >
+        </activity>
+        <activity
+            android:name=".SimplyToGoMainActivity"
+            android:label="Simply ToGo" >
+        </activity>
+        <activity
+            android:name=".StarbucksMainActivity"
+            android:label="Starbucks" >
+        </activity>
+        <activity
+            android:name=".UltimateBajaMainActivity"
+            android:label="Ultimate Baja" >
+        </activity>
+        <activity
+            android:name=".UnivCenterMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="University Center" >
+        </activity>
+
+        <!-- Checkout Process -->
+        <activity
+            android:name=".CheckoutActivity"
+            android:label="Checkout Process" >
+        </activity>
+
+        <!-- Thank You Activity -->
+        <activity
+            android:name=".ThankYouActivity"
+            android:label="Thank You" >
+        </activity>
+    </application>
+
+</manifest>

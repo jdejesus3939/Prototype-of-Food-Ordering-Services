@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0E68C" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/starbuck_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:textColor="#000000"
+            android:textSize="25dip"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:src="@drawable/starbucks" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dip"
+            android:text="Starbuck&apos;s has Faculty Hall as it&apos;s new home, boasting a beautiful patio area for studying or lounging with friends. We offer the full line of coffees, expresso drinks, teas and pastries for your enjoyment."
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <!-- Continue Button -->
+
+        <Button
+            android:id="@+id/btnStarbucksNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="40dip"
+            android:layout_marginTop="40dip"
+            android:text="Click here to place an order..."
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</ScrollView>
